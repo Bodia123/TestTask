@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <title>TEST</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="mainHeader">
+      <div class="header_logo logo">
+        <img src="./img/svg/Group 11.png" alt="logo" />
+      </div>
+      <nav class="header_nav">
+        <ul class="header_list">
+          <li class="header_item"><a href="#">главная</a></li>
+          <li class="header_item"><a href="#gallery">галерея</a></li>
+          <li class="header_item"><a href="#project">проекты</a></li>
+          <li class="header_item"><a href="#task">сертефикаты</a></li>
+          <li class="header_item"><a href="#contact">контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main class="main">
+      <section class="gallery" id="gallery">
+        <div class="gallery_controller">
+          <p class="gallery_title">Project <span>Home</span></p>
+          <div class="gallery_arrows">
+            <button>←</button>
+            <button>→</button>
+          </div>
+          <div class="gallery_count">
+            <p>01</p>
+            <span></span>
+            <p>02</p>
+          </div>
+        </div>
+        <div class="gallery_image">
+          <img
+            src="./img/GelleryItem.jpg"
+            width="770"
+            alt="House"
+            class="gallery_img"
+          />
+          <button>Взглянуть →</button>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about_images">
+          <img src="./img/AboutFirst.png" alt="picture" />
+          <img src="./img/AboutThird.png" alt="picture" />
+          <img src="./img/AboutSecond.png" alt="picture" />
+        </div>
+        <div class="about_text">
+          <h2>О компании</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+          <button>читать</button>
+        </div>
+      </section>
+      <section class="tasks" id="task">
+        <h2 class="tasks_title">Основные задачи</h2>
+        <div class="tasks_container">
+          <div class="task">
+            <span>1</span>
+            <p>
+              Создание комфортных условий и повышение качества обслуживания
+              клиентов
+            </p>
+          </div>
+          <div class="task">
+            <span>2</span>
+            <p>
+              Постоянно совершенствовать качество предоставляемых услуг путем
+              обучения персонала, закупки нового оборудования и усиленной
+              рекламы на рынке
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="project">
+        <h2 class="project_title">Наши проекты</h2>
+        <div class="projects_container">
+          <ul class="projects_list">
+            <li class="project_item">
+              <img src="./img/ProjectFirst.png" alt="photo" />
+              <div class="project_wrapper">
+                <div class="project_wrapper_block">
+                  <h3 class="project_wrapper_text">ДОСУГОВЫЙ ЦЕНТР</h3>
+                  <button class="project_wrapper_button">Подробнее →</button>
+                </div>
+              </div>
+            </li>
+            <li class="project_item">
+              <img src="./img/ProjectSecond.png" alt="photo" />
+              <div class="project_wrapper">
+                <div class="project_wrapper_block">
+                  <h3 class="project_wrapper_text">ДОСУГОВЫЙ ЦЕНТР</h3>
+                  <button class="project_wrapper_button">Подробнее →</button>
+                </div>
+              </div>
+            </li>
+            <li class="project_item">
+              <img src="./img/ProjectThird.png" alt="photo" />
+              <div class="project_wrapper">
+                <div class="project_wrapper_block">
+                  <h3 class="project_wrapper_text">ДОСУГОВЫЙ ЦЕНТР</h3>
+                  <button class="project_wrapper_button">Подробнее →</button>
+                </div>
+              </div>
+            </li>
+            <li class="project_item">
+              <img src="./img/ProjectFourth.png" alt="photo" />
+              <div class="project_wrapper">
+                <div class="project_wrapper_block">
+                  <h3 class="project_wrapper_text">ДОСУГОВЫЙ ЦЕНТР</h3>
+                  <button class="project_wrapper_button">Подробнее →</button>
+                </div>
+              </div>
+            </li>
+            <li class="project_item">
+              <img src="./img/ProjectFifth.png" alt="photo" />
+              <div class="project_wrapper">
+                <div class="project_wrapper_block">
+                  <h3 class="project_wrapper_text">ДОСУГОВЫЙ ЦЕНТР</h3>
+                  <button class="project_wrapper_button">Подробнее →</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="project_button">ВСЕ ПРОЕКТЫ →</button>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact_title">Связаться с нами</h2>
+        <div class="contact_container">
+          <div class="contact_form_container">
+            <form action="">
+              <input type="text" name="name" placeholder="Имя" />
+              <input
+                type="tel"
+                name="telephone"
+                placeholder="Номер телефона"
+                required
+              />
+              <input type="email" name="email" placeholder="E-mail" required />
+              <input
+                type="text"
+                name="interest"
+                placeholder="Интересующий товар/услуга"
+              />
+              <input
+                type="text"
+                name="message"
+                placeholder="Сообщение"
+                required
+              />
+              <p>
+                Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+              </p>
+              <button type="submit">ОТПРАВИТЬ →</button>
+            </form>
+          </div>
+          <div class="contact_img_container">
+            <img src="./img/ContactPhoto.jpg" alt="Contact Photo" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="footer_logo">
+        <a href="#"><img src="./img/svg/FooterLogo.svg" alt="" /></a>
+      </div>
+      <div class="footer_navigation">
+        <h2>Информация</h2>
+        <nav class="footer_nav">
+          <ul class="footer_list">
+            <li class="footer_item"><a href="#">главная</a></li>
+            <li class="footer_item"><a href="#gallery">галерея</a></li>
+            <li class="footer_item"><a href="#project">проекты</a></li>
+            <li class="footer_item"><a href="#task">сертефикаты</a></li>
+            <li class="footer_item"><a href="#contact">контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer_contacts">
+        <h2>Контакты</h2>
+        <p class="footer_adress">
+          100000, Республика Казахстан, <br></br>г. Караганда, ул. Телевизионная 10
+        </p>
+        <p class="footer_tel">+38 (000) 000 00 00</p>
+        <p class="footer_mail">mail@gmail.com</p>
+      </div>
+      <div class="footer_social">
+        <h2>Социальные сети</h2>
+        <ul class="social_list">
+          <li>
+            <a href="https://www.linkedin.com/in/zinovkin/" target="_blank"></a>
+          </li>
+          <li><a href="https://github.com/Bodia123" target="_blank"></a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/zinovkin/" target="_blank"></a>
+          </li>
+          <li><a href="https://github.com/Bodia123" target="_blank"></a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="end">
+        <p>© 2019 Digital Project. Все права защищены.</p>
+      </div>
+    </footer>
+  </body>
+</html>

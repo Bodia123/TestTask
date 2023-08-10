@@ -1,0 +1,43 @@
+.about {
+  margin-bottom: 120px;
+  position: relative;
+  display: flex;
+  background-color: $about_background_color;
+}
+.about_text {
+  margin-left: 30px;
+  width: 400px;
+  color: black;
+  & > h2 {
+    color: $title_color;
+    font-size: 64px;
+    font-style: 300;
+  }
+  & > button {
+    padding: 24px 65px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: $footer_text_color;
+  }
+}
+.about_images {
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+  margin-left: 100px;
+
+  & > img:nth-child(1) {
+    height: 260px;
+  }
+
+  & > img:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(25px);
+  }
+  & > img:nth-child(2) {
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+}

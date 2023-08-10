@@ -1,0 +1,69 @@
+.gallery {
+  display: flex;
+  margin-bottom: 120px;
+}
+.gallery_controller {
+  margin: auto 0;
+}
+.gallery_title {
+  margin: 0;
+  margin-bottom: 90px;
+  font-size: 68px;
+  color: $title_color;
+  & > span {
+    font-weight: 700;
+    color: $base_color;
+  }
+}
+.gallery_arrows {
+  margin-bottom: 95px;
+  & > button {
+    width: 53px;
+    height: 53px;
+    background-color: inherit;
+    border: 1px solid $title_color;
+    transition: all 0.2s ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    &:hover,
+    &:active {
+      background-color: $hover_button_color;
+    }
+  }
+}
+
+.gallery_count {
+  position: relative;
+  display: flex;
+  align-items: center;
+  & > p {
+    font-size: 24px;
+    color: $count_number_color;
+  }
+  & > span {
+    width: 45px;
+    height: 1px;
+    background-color: $count_number_color;
+    transform: rotate(133deg);
+
+    margin: 0 25px;
+  }
+}
+
+.gallery_image {
+  position: relative;
+
+  & > button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 24px 50px;
+
+    font-size: 12px;
+    background-color: $footer_text_color;
+    border: none;
+    text-transform: uppercase;
+  }
+}

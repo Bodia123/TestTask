@@ -1,0 +1,151 @@
+footer {
+  display: block;
+  background-color: black;
+}
+.footer {
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+  font-family: "TT Hoves";
+
+  font-weight: 400;
+
+  padding-top: 58px;
+}
+.footer_logo {
+  & img {
+    width: 145px;
+    height: 95px;
+  }
+}
+
+.footer_navigation {
+  margin-left: 100px;
+  & > h2 {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: $footer_text_color;
+  }
+}
+.footer_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer_item {
+  font-size: 14px;
+  text-transform: uppercase;
+  & > a {
+    text-decoration: none;
+    color: $footer_text_color;
+  }
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+// social menu
+.footer_social {
+  & > h2 {
+    color: $footer_text_color;
+    font-size: 16px;
+    margin-bottom: 23px;
+  }
+}
+.social_list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  & > li {
+    margin-right: 40px;
+    & > a {
+      display: block;
+      width: 20px;
+      height: 25px;
+
+      &::after {
+        content: "";
+        background-repeat: no-repeat;
+
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  & > li:nth-child(1) {
+    & a::after {
+      background-image: url(../../img/svg/facebook.svg);
+    }
+  }
+  & > li:nth-child(2) {
+    & a::after {
+      background-image: url(../../img/svg/twitter.svg);
+    }
+  }
+  & > li:nth-child(3) {
+    & a::after {
+      background-image: url(../../img/svg/Linked\ In.svg);
+    }
+  }
+  & > li:nth-child(4) {
+    & a::after {
+      background-image: url(../../img/svg/pininterest.svg);
+    }
+  }
+}
+//contact
+.footer_contacts {
+  margin-left: 180px;
+  margin-bottom: 50px;
+  & > h2 {
+    color: $footer_text_color;
+    font-size: 16px;
+    margin-bottom: 23px;
+  }
+  & > p {
+    padding-left: 20px;
+    position: relative;
+    color: $footer_text_color;
+    &::before {
+      background-repeat: no-repeat;
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.footer_adress {
+  width: 370px;
+
+  &::before {
+    background-image: url(../../img/svg/metka.svg);
+  }
+}
+.footer_tel {
+  &::before {
+    background-image: url(../../img/svg/phone.svg);
+  }
+}
+.footer_mail {
+  &::before {
+    background-image: url(../../img/svg/mail.svg);
+  }
+}
+
+.end {
+  background-color: black;
+  text-align: center;
+
+  display: block;
+  width: 100%;
+  height: 70px;
+  border-top: 1px solid gray;
+  & > p {
+    color: #c8c8c880;
+  }
+}

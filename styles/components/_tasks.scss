@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "TT Hoves Bold";
+  src: url("../font/TT\ Hoves\ Pro\ Trial\ ExtraBold.ttf");
+}
+.tasks {
+  margin-bottom: 120px;
+}
+.tasks_title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 64px;
+  color: $title_color;
+}
+.tasks_container {
+  display: flex;
+  margin-top: 60px;
+  & span {
+    margin-right: 30px;
+    display: inline-block;
+    color: $hover_button_color;
+    font-family: "TT Hoves Bold";
+    font-weight: 900;
+    font-size: 200px;
+  }
+  & p {
+    color: black;
+    font-size: 20px;
+    line-height: 37px;
+  }
+  //   & p:last-child {
+  //     width: 420px;
+  //   }
+}
+.task {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 190px;
+  }
+}
